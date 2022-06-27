@@ -39,7 +39,9 @@ export default function MenuItems(props: MenuItemsProps) {
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
-          // MenuListProps={{}}
+          MenuListProps={{
+            onMouseLeave: handleClose,
+          }}
         >
           {props.list.map((item) => {
             return (
