@@ -1,5 +1,6 @@
-import { Box, Container, styled, SxProps } from '@mui/material';
+import { Box, Button, Container, styled, SxProps } from '@mui/material';
 import { CSSProperties } from 'react';
+import ButtonEntrar from '../ButtonEntrar';
 import MenuItems from '../MenuItems';
 
 const StyledHeaderQuintoAndar = styled(Container)`
@@ -72,8 +73,18 @@ export default function HeaderQuintoAndar() {
           />
           <MenuItems title="ajuda" />
         </Box>
-        <Box>botao</Box>
+        <Box>
+          <ButtonEntrar />
+        </Box>
       </StyledHeaderQuintoAndar>
+      {/* <Box
+        sx={{
+          backgroundImage:
+            'url(https://www.quintoandar.com.br/_next/image?url=https%3A%2F%2Fquintoandar.com.br%2Fimg%2Flanding%2Freb%2Fnew_Hero-Image.png&w=1920&q=80)',
+        }}
+      >
+        iamgem
+      </Box> */}
     </>
   );
 }
