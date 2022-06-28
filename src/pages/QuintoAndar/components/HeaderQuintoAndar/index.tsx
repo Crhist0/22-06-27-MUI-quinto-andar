@@ -1,4 +1,11 @@
-import { Box, Button, Container, styled, SxProps } from '@mui/material';
+import {
+  Box,
+  Button,
+  Container,
+  styled,
+  SxProps,
+  Typography,
+} from '@mui/material';
 import { CSSProperties } from 'react';
 import ButtonEntrar from '../ButtonEntrar';
 import FooterQuintoAndar from '../FooterQuintoAndar';
@@ -78,14 +85,20 @@ export default function HeaderQuintoAndar() {
           <ButtonEntrar />
         </Box>
       </StyledHeaderQuintoAndar>
-      {/* <Box
+      <Box
         sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '60vh',
           backgroundImage:
             'url(https://www.quintoandar.com.br/_next/image?url=https%3A%2F%2Fquintoandar.com.br%2Fimg%2Flanding%2Freb%2Fnew_Hero-Image.png&w=1920&q=80)',
         }}
       >
-        iamgem
-      </Box> */}
+        <Typography variant="h1" color="white" fontWeight="bold">
+          CONTEÚDO DO SITE AQUI
+        </Typography>
+      </Box>
       <FooterQuintoAndar />
     </>
   );
