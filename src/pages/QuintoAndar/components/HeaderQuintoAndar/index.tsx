@@ -1,6 +1,7 @@
 import { Box, Button, Container, styled, SxProps } from '@mui/material';
 import { CSSProperties } from 'react';
 import ButtonEntrar from '../ButtonEntrar';
+import FooterQuintoAndar from '../FooterQuintoAndar';
 import MenuItems from '../MenuItems';
 
 const StyledHeaderQuintoAndar = styled(Container)`
@@ -85,6 +86,7 @@ export default function HeaderQuintoAndar() {
       >
         iamgem
       </Box> */}
+      <FooterQuintoAndar />
     </>
   );
 }
